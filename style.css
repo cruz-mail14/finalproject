@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+}
+
+html {
+  color: black;
+  background-image: url("background.png");
+}
+
+main {
+  display: block;
+  justify-content: center;
+}
+
+header {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 30px;
+  color: black;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  margin: 80px 35px 0px 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  background-color: #8CB644;
+}
+
+.headline h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: 20px;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+.content {
+  margin: 120px 90px 60px 90px;
+  padding: 30px 60px 20px 60px;
+  border: solid green 2.5px;
+  background-color: whitesmoke;
+}
+
+.content h1 {
+  font-family: "Montserrat Alternates", sans serif;
+  font-size: 35px;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+.content a {
+  text-decoration: none;
+  color: orange;
+}
+
+.content h3,
+h2, h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+.info {
+  display: flex;
+  padding-right: 10px;
+}
+
+.info img {
+  display: block;
+  max-width: 20%;
+  min-width: 220px;
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding-left: 50px;
+}
+
+.p {
+  font-family: "Verdana", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 27px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Verdana", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+
+footer {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #8CB644;
+  margin-top: 70px;
+  padding: 30px 0px 45px 0px;
+}
+
+.footer {
+  font-family: "Verdana", "Arial", sans-serif;
+  color: aliceblue;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 30px;
+  padding: 10px 10px;
+  margin-bottom: 25px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gold;
+  padding-top: 10px;
+}
+
+.footer h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.container h2 {
+  font-family: "Tahoma", sans-serif;
+  color: #8cb644;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.4px;
+  margin: 12px 0px 30px 0px;
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+label {
+  font-family: "Gidole", sans-serif;
+  font-size: 18px;
+}
+
+input {
+  font-family: "Gidole", sans-serif;
+  font-size: 18px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: white;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #8CB644;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  border: solid 3px #8cb644;
+  padding: 10px 30px 25px 30px;
+  margin: 30px 30px 15px 30px;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 30px;
+  background: grey;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity height .2s;
+  border-radius: 10px;
+}
+
+.slider:hover {
+  opacity: 5;
+  height: 30px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 30px;
+  background: #8cb644;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #8cb644;
+  cursor: pointer;
+}
+
+.formq {
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+label {
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .info {display: block;}
+  .info img {padding-left: 0px}
+}
+
+@media only screen and (max-width: 600px) {
+  .content {margin: 120px 50px 60px 50px;}
+  .content {padding: 30px 30px 20px 30px;}
+}

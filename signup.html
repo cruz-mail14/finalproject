@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sign Up | OSC Chess</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Gidole&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+.navbar {
+  display: flex;
+  overflow: hidden;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #8CB644;
+  font-family: "Gidole", "Tahoma", sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: aliceblue;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: aliceblue;
+  padding: 15px 15px 15px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FA961B;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8CB644;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: aliceblue;
+  padding: 12px 16px;
+  max-width: 145px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #FA961B;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<style>
+.dropinfo {
+  position: relative;
+  display: inline-block;
+}
+
+.dropinfo-content {
+  display: none;
+  position: absolute;
+  background-color: #242124;
+  min-width: 250px;
+  max-width: 600px;
+  min-height: 30px;
+  max-height: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 12px;
+  line-height: 15px;
+}
+  
+.m {
+  color: orange;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+  
+.dropinfo-content img {
+  width: 130px;
+  height: 130px;
+}
+
+.dropinfo:hover .dropinfo-content {
+  display: block;
+}
+
+.formq .p {
+   font-family: "Gidole", sans-serif;
+   font-size: 18px;
+   color: black;
+}
+
+</style>
+</head>
+  
+<header>
+  <h1>Ormiston Senior College Chess Club</h1>
+
+<nav class="navbar">
+  <a href="mainweb.html">Home</a>
+  <a href="intro.html">Introduction</a>
+    <div class="dropdown">
+    <button class="dropbtn">Sign Up</button>
+      <div class="dropdown-content">
+        <a>Contact Us : +64 918 875 5463</a>
+        <a href="signup.html">Join Us</a>
+      </div>
+    </div>
+</nav>
+</header>
+
+<body>
+<main>
+  <form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h2>Be a part of our club!</h2>
+    <hr>
+  <form action="action_page.php">
+  <div class="formq">
+    <label for="fname">School Email</label>
+    <input type="text" id="email" name="email" placeholder="Your school email (ex: 25001@ormiston.school.nz)" required>
+
+    <label for="lname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Your full name (ex: Edward I. Santos)" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="n/a">Choose one</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="nonbinary">Non-binary</option>
+      <option value="prefer">Prefer not to say</option>
+    </select>
+    
+    <label for="syyear">Year</label>
+    <select id="year" name="year">
+      <option value="y11">11</option>
+      <option value="y12">12</option>
+      <option value="y13">13</option>
+    </select>
+  </div>
+    <br><br><br>
+    <hr>
+    <br>
+   <div class="formq">
+    <div class="slidecontainer">
+      <label for="knowledge">On a scale of 1 to 100, how much is your knowledge about chess?</label>
+      <br><br><br>
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <div class="p">Range: <span id="demo"></span></div>
+    </div>
+     
+    <div class="p">Do you play chess?</div>
+    <input type="radio" name="play" id="yes" value="Yes">
+    <label for="play">Yes, I play more often</label><br>
+    <input type="radio" name="play" id="maybe" value="Maybe">
+    <label for="play">Yes, but only on my spare time</label><br>
+    <input type="radio" name="play" id="once" value="Once">
+    <label for="play">Yes, I played chess once</label><br>
+    <input type="radio" name="play" id="no" value="No">
+    <label for="play">No, I do not play chess</label><br>
+    
+    <div class="p">If <b>yes</b>, did you participate in any chess events?</div>
+    <input type="radio" name="club" id="yes" value="Yes">
+    <label for="club">Yes</label>
+    <input type="radio" name="club" id="no" value="no">
+    <label for="club">No</label>
+
+    <div class="p">If no, what is your reason of wishing to join this club?</div>
+    <div class="radio">
+    <input type="radio" name="reason" id="yes" value="Yes">
+    <label for="once">I want to be a part of the club</label><br>
+    <input type="radio" name="reason" id="yes" value="Yes">
+    <label for="once">I want to participate in chess events</label><br>
+    <input type="radio" name="reason" id="no" value="no">
+    <label for="once">I want to learn and play chess</label><br>
+    <input type="radio" name="reason" id="no" value="no">
+    <label for="once">I want to join because I know someone from the club</label>
+   </div>
+    <br>
+     
+    <label for="subject">What would be your purpose in joining the club, and what will be your goals this year?</label>
+    <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</main>
+  
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+</body>
+<footer>
+  <div class="footer">
+    <a href="https://www.ormiston.school.nz/">Ormiston Senior College</a>
+    <br><br>
+    <a href="https://www.facebook.com/OrmistonSeniorCollege">Facebook</a>
+    <br><br><br>
+    <h4>Address:</h4>
+    <br>
+    <h4>Flatbush, Ormiston</h4>
+  </div>
+</footer>
+</html>

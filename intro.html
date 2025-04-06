@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>What is Chess? - OSC Chess</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Gidole&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+.navbar {
+  display: flex;
+  overflow: hidden;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #8CB644;
+  font-family: "Gidole", "Tahoma", sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: aliceblue;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: aliceblue;
+  padding: 15px 15px 15px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FA961B;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8CB644;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: aliceblue;
+  padding: 12px 16px;
+  max-width: 145px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #FA961B;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<style>
+.dropinfo {
+  position: relative;
+  display: inline-block;
+}
+
+.dropinfo-content {
+  display: none;
+  position: absolute;
+  background-color: #242124;
+  min-width: 250px;
+  max-width: 600px;
+  min-height: 30px;
+  max-height: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 12px;
+  line-height: 15px;
+}
+  
+.m {
+  color: orange;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+  
+.dropinfo-content img {
+  width: 130px;
+  height: 130px;
+}
+
+.dropinfo:hover .dropinfo-content {
+  display: block;
+}
+</style>
+</head>
+  
+<header>
+  <h1>Ormiston Senior College Chess Club</h1>
+
+<nav class="navbar">
+  <a href="mainweb.html">Home</a>
+  <a href="intro.html">Introduction</a>
+    <div class="dropdown">
+    <button class="dropbtn">Sign Up</button>
+      <div class="dropdown-content">
+        <a>Contact Us : +64 918 875 5463</a>
+        <a href="signup.html">Join Us</a>
+      </div>
+    </div>
+</nav>
+</header>
+  
+  
+<body>
+<main>
+<section class="content">
+  <h2>Brief Summary</h2>
+  <div class="info">
+    <div class="p">This page contains all of the information you need about chess. It also covers the history of chess it only covers most of the important timelines from ancient times to modern sport, including the history of chess in New Zealand.</div>
+  </div>
+  <a class="sectlinks" href="#whatischess">What is Chess?</a><br><br>
+  <a class="sectlinks" href="#howtoplay">How to Play</a><br><br>
+  <a class="sectlinks" href="#history">History of Chess</a>
+  
+  <br><br>
+  <h1 id="whatischess">What is Chess?</h1>
+  <div class="info">
+  <div class="p">Chess is a strategy-board game where two players fight using pieces. In ancient times, it's used as a war strategy game where they simulate how their armies attack using pieces, or as a game that is often played by nobles. We're gonna tackle about that later.</div>
+  </div>
+
+  <div class="info">
+    <div class="p">Today, chess is one of the most popular game worldwide. Chess is notable not only being as a hobby game but also a competitive sport. Chess sports require an immense mental skill, and quick-decision thinking, that's why it is so interesting to watch chess sports.</div>
+  </div>
+
+  <div class="info">
+    <div class="p">Chess is also known for being played virtually, thanks to many online chess websites, chess became accessible worldwide, providing an easier path to learn chess, but also get to raise ranks and become a chess grandmaster. One of these websites is the all-known <a href="https://www.chess.com/">Chess.com</a></div>
+  </div>
+  
+    <h3>The Chessboard</h3>
+  <div class="info">
+    <div class="p">Chess is usually played in a square board called a <i>chessboard</i>. It is made up by 64 individual squares in an alternate constrast pattern. The board divided by ranks (rows) and files (columns), the ranks are numbered by 1-8 starting from the bottom ranks. Then the files are labeled as letters A-G the starts from the left side.</div>
+    <img src="https://64jaques.com/1235-large_default/copy-of-venier-chessboard-series-padauk-and-mukali-light-frame.jpg">
+    </div>
+  <div class="info">
+    <div class="p">When you usually watch or play chess especially online, you'll encounter names that look like grid codes when a piece is moved. You use these codes identifying square coordinates, or namely <i>'algebraic notation'</i>. The coordinates start with the x-axis (letters) and y-axis (numbers) and it should look like this (e.g. d3, g4, Nf4)</div>
+   <br>
+  </div>
+    
+  <h3>The Materials</h3>
+  <div class="info">
+  <div class="p">Materials are the pieces of your chess. Each players will have a set of 16 pieces, summing up to 32 pieces. These materials have their own pros and cons, and also a special skill that differs from each pieces but also have limitations. There are 6 types of materials:</div>
+  </div>
+  
+  <h4>Pawn</h4>
+  <div class="info">
+  <div class="p">Pawns are the lowest rank of the pieces. Their moves limit to one square forward but it can also move two squares forward, when the pawn is in its initial place. Unlike its moving pattern, the pawn can only capture by moving diagonally. It has two special skills, the pawn can capture a 'pawn' without touching the piece, called the <i>'en passant'</i> rule. The pawn can also be promoted into a piece with a higher rank when it reaches the enemy side of the board<</div>
+<img src="https://www.365chess.com/view/wp-content/uploads/2023/06/358x359xpawn-moves.png.pagespeed.ic.kSlk0K6rFZ.webp">
+  </div>
+  
+  <h4>Knights</h4>
+  <div class="info">
+  <div class="p">Unlike any pieces, the knight is the only piece that moves in a "L-shape". The knight can move by two ways: two squares horizontally and one square vertically, or one square horizontally and two squares vertically. It can jump from other pieces so you are able to use it as an opening, and it is a good initiator in capturing a piece.</div>
+  <br>
+<img src="https://www.365chess.com/view/wp-content/uploads/2023/06/354x357xknight-moves.png.pagespeed.ic.8YJCxw6Z68.webp">
+  </div>
+  
+  
+  <h4>Bishop</h4>
+  <div class="info">
+  <div class="p">The bishop moves diagonally and extends throughout the board unless blocked. However, the bishop can only move from its original square color (e.g. the bishop only moves in the white square because it originates from there), and it has a big disadvantage in capturing. Fortunately, the player is provided two bishops that have different colours, which make it balanced.</div>
+  <img src="https://www.365chess.com/view/wp-content/uploads/2023/06/355x358xbishop-moves.png.pagespeed.ic.sDHr0LSbNI.png">
+  </div>
+  
+  
+  <h4>Rook</h4>
+  <div class="info">
+  <div class="p">The rook moves straight, vertically or horizontally and it extends throughout the board unless blocked. Like the bishop, it is an aggressive piece because it can navigate to the board easily. It also has a special skill used at early game, where it can protect the king from threats, called the <i>'castling'</i> rule.</div>
+  <img src="https://www.365chess.com/view/wp-content/uploads/2023/06/353x358xrook-moves.png.pagespeed.ic.5deLsktOmS.webp">
+  </div>
+  
+  <h4>Queen</h4>
+  <div class="info">
+  <div class="p">The queen is the most powerful and the omnipotent piece in the board. Its range extends all the corners of the board, and it can move like any chess pieces except the knight piece (it cannot jump from other pieces).</div>
+  <img src="https://snakify.org/static/images/problems/queen_move.png">
+  </div>
+  
+  
+  <h4>King</h4>
+  <div class="info">
+  <div class="p">The king is the weakest piece but is the most important piece of the game. Its movements only range from one square adjacent to itself. It can do the castling rule with the rook piece. The king is the only piece that can only be captured when checked. When the squares of the king is blocked by the enemy piece, the king cannot move to that square and will need to move elsewhere.</div>
+   <img src="https://media.chesskidfiles.com/images/user/tiny_mce/GrandpaRayNC/moves%20of%20king_84e5f_fa0bd.png">
+  </div>
+</section>
+  
+  
+<section id="howtoplay" class="content">
+  <h2 >Basics of Chess</h2>
+  <div class="info">
+    <div class="p">This sections contains some of the fundamentals in chess, openings and checkmate tactics. Here, you can watch guides for chess beginners.</div>
+  </div>
+    <iframe style="aspect-ratio: 16 / 9; width: 100% !important;" width="928" height="522" src="https://www.youtube.com/embed/6Pqd7UFWr7M" title="How to Play Chess" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><br><br>
+    <iframe style="aspect-ratio: 16 / 9; width: 100% !important;" width="928" height="522" src="https://www.youtube.com/embed/OCSbzArwB10" title="How To Play Chess: The Ultimate Beginner Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <br><br><br><br>
+  <div class="info">
+    <div class="p">1. Before the beginning of the game, the board is placed in a position where a 'white' square from opposing corners must be placed at the bottom right-hand side of the players. The board must have the ranks at the left and right side and files at the top and bottom side.<br><br> Chess pieces are initially positioned like this. In the first rank, one king and queen are positioned in the middle files. Two bishops, knights and rooks each positioned on the other side of the king and queen respectively, and the second rank are filled with eight pawns.<br><br>In a game, the player "White" or with the white pieces will make the first move, and the player "Black" makes the second move, and White does the next move and so on.</div>
+    <img src="https://www.regencychess.co.uk/images/how-to-set-up-a-chessboard/how-to-set-up-a-chessboard-7.jpg">
+    </div>
+ 
+    <div class="info">
+    <div class="p">3. To win, the king needs to be in check. A 'check' is when the king's square is attacked by the enemy piece, therefore, the king is under threat by that piece. And if all the squares (including its current square) are in check, then the king cannot escape and the game ends.<br><br> A rule in checkmating is that either of the kings cannot check each other, but only the other chess pieces are able to check the king. This is avoided by moving the king elsewhere or blocking the enemy piece with your piece.<br><br>A special rule called <b>castling</b> can also be done at the start the game when the king is prone to checks. When the king moves two squares to the rook, the rook and the king will swap their places.</div>
+    <img src="https://assets.dized.app/project/89d5f752-f681-4c0f-aa2e-3c0cfac544c0/en-US/773df2f0a4821d9286ca88a92e4eaf6c/8fcc0831-cde4-4168-ac87-139f5e0ae202-d41d8cd98f00b204e9800998ecf8427e.png">
+    </div>
+    
+    <div class="info">
+    <div class="p">5. The game can be ended in three ways: a checkmate, a draw and a stalemate. A <b>draw</b> is done when either of the players have made the same move three times in a row, or neither of them has enough materials to check the king, therefore neither wins or loses the game. A <b>stalemate</b> is a different type of draw, it is declared when either of the players are not in check but cannot make a legal move.</div>
+    </div>
+    <div class="info">
+  <div class="p">6. A special rule is applied where the pawn can be <b>promoted</b> in a certain condition. Once your own pawn gets through to the farthest rank in the board, the pawn can have a choice of promoting to a queen, a bishop, a knight and a rook. It cannot be promoted to a king or itself, but there are no limits in promoting, so you can have multiple pieces.</div>
+    <br>
+    <img src="https://assets.dized.app/project/89d5f752-f681-4c0f-aa2e-3c0cfac544c0/en-US/773df2f0a4821d9286ca88a92e4eaf6c/4c6fa975-c21d-47eb-9b5d-1731bc29cc5e-d41d8cd98f00b204e9800998ecf8427e.png">
+    </div>
+    <div class="info">
+    <div class="p">7. Another special rule applied on the pawn is called 'en passant' rule. When a pawn moves two squares forward and lands next to the enemy pawn, the enemy pawn can capture that piece by moving a square diagonally.</div>
+    <br>
+    <img src="https://media.chesskidfiles.com/images/user/tiny_mce/PlayChess2021/en-passant-example-3_fb0b7.png">
+    </div>
+  <br><br>
+  <hr>
+  <br>
+    <h2 id="bopenings">Openings</h2>
+    <div class="info">
+    <div class="p">Openings refer to the starting phase of chess, where players play their first move. Most often start with a pawn move on any square or rarely, a knight move. The purpose of this phase is controlling the 'center' of the board.<br><br>There are several ways on how to start your first move. Usually you start with either d4 and e4, two of the most notorious openings. (e.g. in the images, white move to d4 as opening, black move to e5 as counter)</div>
+  <img src="https://media.chesskidfiles.com/images/user/tiny_mce/GrandpaRayNC/englund%20gambit%20diagram_4671c.png">
+    </div>
+  
+    <div class="info">
+    <div class="p">D4 or the <i>Chess Pawn's Opening</i> is done by moving the pawn from d2 to d4 (two squares forward). The purpose of this move is initially controlling the center, preventing the enemy to make a move to e4.</div>
+  <img src="https://www.365chess.com/view/wp-content/uploads/2023/05/358x357xchess-openings-with-1.e4.jpg.pagespeed.ic.QE2TZXbl-6.jpg">
+    </div>
+  
+    <div class="info">
+    <div class="p">E4 or the <i>King's Pawn Opening</i> is an even more aggressive play than d4 and the most popular opening. The king's pawn moves from e2 to e4, immediately controlling the board and being the offensive player. It exposes the king but allowing the queen, the bishop (f1) and the knight (g1) to move.</div>
+    <img src="https://i1.wp.com/chesspathways.com/wp-content/uploads/2019/08/2a-300x300.png?ssl=1">
+  </div>
+  <div class="info">
+    <div class="p">There are other openings that are rarely used in the game like <b>Nf3</b> (Knight moves, N refers to knights because they move in an L-shape) and <b>c4</b> (Pawn c2 to c4, allowing the bishop b1 to move.). But these first move openings have a variants of other openings such as from d4, you can do Queen's Gambit and from e4, you can do the Sicilian Defense.</div>
+  </div>
+    <p>Further explained here: (a video about initial openings and counter-openings)</p>
+    <iframe style="aspect-ratio: 16 / 9; width: 100% !important;" width="928" height="522" src="https://www.youtube.com/embed/8IlJ3v8I4Z8" title="Basic Chess Openings Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     
+</section>
+<section id="history" class="content">
+  
+<h2>Early History of Chess</h2>
+  <div class="info">
+    <div class="p">The origins of chess dates back to the 6th century, where the term 'chess' was not used and the game had a different purpose. Then it further spread during the 9th century, making its way to Europe, where it got famous.</div>
+  </div>
+  
+    <h3>6th Century</h3>
+  <div class="info">
+    <div class="p">Chess to its ancient precursor was called caturaṅga which means "four-limbs" in terms of yoga, but in chess, it means "four divisions" namely the elephantries, cavalries, chariots and infantries.<br><br>It was believed to originate in northern India. The game portrays a war between two armies, and each pieces represents the Indian army. Chaturanga had 16 chess pieces just like present chess, consisting of 1 raja (king), 1 mantri (vizier/minister), 2 elephants (bishops), 2 cavalries (knights), 2 chariots (rooks) and 8 infantries (pawn).</div>
+    <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/martinaxo/phpQVFEiM.png">
+    <img src="https://bonaludo.wordpress.com/wp-content/uploads/2018/03/chaturacji-planszaipiony.png">
+  </div>
+ 
+  <h3>7th century</h3>
+  <div class="info">
+    <div class="p">Ancient chess was spread to other countries, firstly to the Persians. There in Persia, it was further developed and became a part of the culture, often symbolizing nobility and wisdom. Its name was changed to <b>shatranj</b>(originally chatrang but was translated to Arabic). They made changes with the game. They replaced the vizier to queen, and elephantries to rooks, and also added another piece called a firzān (counselor), which had no purpose in the game.<br><br>They changed the rule of the game, which the player is given a warning when the king is in check. Whenever the king is checked, player would shout 'Shah!' ("king" in Persian) and 'Shah Mat!' ("the king is helpless" in Persian), which was an expression in early times.</div>
+    <img src="https://www.chessvariants.com/historic.dir/jlc-shatranj-clay1-red.jpg">
+  </div>
+  
+    <h3>9th Century</h3>
+  <div class="info">
+    <div class="p">After the Persian conquest of Arabians, Shatranj was taken by the Muslim empire. It quickly spread due to the expansion and conquest of the empire, where it made its way to the lands of Europe. <br><br>It quickly became popular and it was played throughout the country. It was mostly played by nobles and scholars at that time, acting as a pasttime hobby for them. Chess was further developed by the Europeans, as new rules were standardized and chess pieces were renamed to as we know today. The game of chess was modernized.</div>
+    <img src="https://jannagnoelle.com/wp-content/uploads/2016/10/medieval-chess.jpg?w=362&h=314">
+    </div>
+ <div class="info">
+    <div class="p">Chess was spread even more after the 9th century, making its way to countries such as China, East Asia, Japan, Siberia, in which different versions of chess was born.</div>
+  </div>
+  
+    <h3>Spanish Era of Chess</h3>
+  <div class="info">
+    <div class="p">Shatranj made its way to Spain during the Muslim conquest of the Arabs before it even spread throughout Europe. Through early chess, Spanish contributed literary works that talks about chess.</div>
+  </div>
+
+    <h4>Literary Contributions</h4>
+   <div class="info">
+    <div class="p">- One of the oldest recorded literature was the <i>Repetición de Amores y Arte de Ajedrez</i> (Repetition of Love and the Art of Playing Chess). It was published on Spain during the late 1400s by <i>Luis Ramírez de Lucena</i> and some of his companions. He was a Spanish churchman and considered to be one of the greatest chess players who ever lived. Another fact from him is that he was also born in Lucena.<br><br>His book provides information about strategies and openings in chess, which is mostly used by many today. A special rule was derived from his name, called 'Lucena's position'.</div>
+   <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/batgirl/phpCxfjF0.jpeg">
+  </div>
+
+    <div class="info">
+    <div class="p">- Another recorded manual was the <i>Libro de la invencion liberal y arte del juego del axedrez</i> published by <b>Ruy López de Segura</b> in 1561. He was a Spanish chess player and was also a priest. Like Lucena's book, his book contains the general chess rules and strategies such as openings and check tactics, and also a brief history of early chess.<br><br>Another one of his contributions was the all-known <i>King's Gambit</i> and <i>Ruy Lopez (Spanish Game)</i> opening in chess.</div>
+   <img src="https://images.chesscomfiles.com/uploads/v1/blog/475502.f355bdae.668x375o.9bf2a15ff922@2x.jpeg">
+  </div>
+  
+  
+   <h2>Modern Chess - Competitive Sport</h2>
+    <div class="info">
+      <div class="p">One of the most notorious history of chess started in the late 1800s, where the era of chess sport began.</div> 
+  </div>
+  
+    <h3>The First Chess Tournament in History</h3>
+    <div class="info">
+      <div class="p">The first recorded chess tournament was in the late 1500s, even before chess became a known sport. In 1575, a chess tournament was hosted in Madrid, and was held in the court of King Philip II of Spain. The battle was between chess masters, Giovanni Leonardo and Paolo Boi against Ruy López and Alfonso Ceron. The outcome of this tournament was Giovanni winning.</div>
+     <img src="https://s3-eu-west-2.amazonaws.com/photos.thearticle.com/app/production/articles/5606/from-columbus-to-capablanca-the-hispanic-contribution-to-chess.jpg">
+  </div>
+  <div class="info">
+    <div class="p">The first ever modern chess tournament took place in London during 1851. It marked the beginning of a new era of chess, attracting players throughout the world.
+    <br><br>
+    During that time, people observed that the players took longer to make a move in the tournament, the longest record was 1 hour and 20 minutes. Several years later, speed chess and many variants of chess games was invented.</div>
+  </div>
+  
+    <h3>FIDE</h3>
+    <div class="info">
+    <div class="p">Just after the 19th century, the International Chess Federation (FIDE), was founded in 1924 by four founders. The FIDE is responsible in hosting and regulating international chess tournaments, notably the World Chess Championship. They are the governing body of chess-related events globally.<br><br>Although, it is the global organization, many countries have formed their own chess federations like the US Chess, Chess Federation of Russia, and the <a href="https://newzealandchess.co.nz/">New Zealand Chess Federation</a>.</div>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Fidelogo.svg/1200px-Fidelogo.svg.png">
+  </div>
+  </section>
+<section class="content">
+    <h1>History in New Zealand</h1>
+  <div class="info">
+      <div class="p">Although rugby was the all-known game in New Zealand, this country had a history with chess during 1860s. A club called <i>Dunedin Club</i> was formed on September of 1863, being the first chess club in New Zealand, this marked the beginning of its history. 7 years later, the NZ Chess Federation was established.<br><br>The first chess championship was hosted by the NZCF in Christchurch during 1879, and won by <b>Henry Hookham</b>, there was not much background information for him but he was one of the first chess players in New Zealand, and a good one at that.</div>
+    <img title="Henry Hookham" src="https://d2u4q3iydaupsp.cloudfront.net/9H4hIMlsrebnVDIXbclytCK5swJ1l1V9um2xlJpovQEAJRVSmG2tCXsj2ENbK9EVwfKY9vcv0rDidOWYjokecCvNwcuXwALF3G672PttH5LLyAT4MCtBeAOadWIefAys">
+  </div>
+ 
+    <h3>New Zealand Chess Grandmaster</h3>
+  <div class="info">
+      <div class="p">The first ever chess grandmaster in New Zealand is <a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a>. He was the first and the 'current' chess grandmaster in New Zealand. He was born during the 1960s in Wellington, and in the 1970s, he won his first championship. He then, further pursued, getting six championships in New Zealand. After that, he contributed to chess in a way of writing.</div>
+    <img title="Murray Graham Chandler" src="https://www.odt.co.nz/sites/default/files/styles/odt_portrait_medium_3_4/public/story/2016/04/murray_chandler_new_zealand_s_most_successful_ches_9371899514.JPG?itok=iCLpVe4G">
+  </div>
+  </section>
+<aside>
+</aside>
+</main>
+</body>
+<footer>
+  <div class="footer">
+    <a href="https://www.ormiston.school.nz/">Ormiston Senior College</a>
+    <br><br>
+    <a href="https://www.facebook.com/OrmistonSeniorCollege">Facebook</a>
+    <br><br><br>
+    <h4>Address:</h4>
+    <br>
+    <h4>Flatbush, Ormiston</h4>
+  </div>
+</footer>
+</html>
